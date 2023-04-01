@@ -30,7 +30,7 @@
     align-items: center;
     width: 100%;
     height: 100%;
-    gap: 5vw;
+    gap: 3rem;
 }
 a {
     height: 90%;
