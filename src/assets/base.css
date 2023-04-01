@@ -1,5 +1,72 @@
-html, body {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+@font-face {
+  font-family: Glitch;
+  src: url("/fonts/Glitch.otf");
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes back-anim {
+  0% {
+    background-position: center;
+  }
+  50% {
+    background-position: 15px;
+  }
+  100% {
+    background-position: center;
+  }
+}
+
+html {
+  --s: 50px;
+  --c: rgb(5, 5, 5);
+  --_s: calc(2*var(--s)) calc(2*var(--s));
+  --_g: 35.36% 35.36% at;
+  --_c: #0000 66%, rgb(10, 10, 10) 68% 70%, #0000 72%;
+  background:
+    radial-gradient(var(--_g) 100% 25%, var(--_c)) var(--s) var(--s)/var(--_s),
+    radial-gradient(var(--_g) 0 75%, var(--_c)) var(--s) var(--s)/var(--_s),
+    radial-gradient(var(--_g) 100% 25%, var(--_c)) 0 0/var(--_s),
+    radial-gradient(var(--_g) 0 75%, var(--_c)) 0 0/var(--_s),
+    repeating-conic-gradient(var(--c) 0 25%, #0000 0 50%) 0 0/var(--_s),
+    radial-gradient(var(--_c)) 0 calc(var(--s)/2)/var(--s) var(--s) var(--c);
+  background-attachment: fixed;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+img,
+button,
+li {
+  color: white;
+  font-family: Glitch, "Arial";
+  text-decoration: none;
+  letter-spacing: 0.075em;
+}
+
+*::-webkit-scrollbar {
+  width: 0.4rem;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(0,0,0);
+  border-radius: 1rem;
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+@media (prefers-reduced-motion) {
+  html {
+    animation: back-anim 25s forwards infinite ease-in-out;
+  }
 }
