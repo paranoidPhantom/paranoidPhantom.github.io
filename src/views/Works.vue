@@ -7,6 +7,12 @@ import ProjectCard from '../components/ProjectCard.vue';
         <h1>Past work</h1>
         <div class="project-container">
             <ProjectCard
+                link="https://artifactmod.ru"
+                video="5faxmOxtTwU"
+                name="artifactmod.ru"
+                description="A large story mod for S.T.A.L.K.E.R. Call of Pripyat"
+            />
+            <ProjectCard
                 link="https://agave.spb.ru"
                 video="Awqv0aJAjlQ"
                 name="agave.spb.ru"

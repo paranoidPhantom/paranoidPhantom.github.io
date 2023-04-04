@@ -1,5 +1,4 @@
 <script setup>
-import {defineProps} from "vue"
 const props = defineProps({
     link: String,
     video: String,
@@ -10,7 +9,7 @@ const props = defineProps({
 
 <template>
     <div class="card">
-        <iframe :src="`https://youtube.com/embed/${video}?controls=0&autoplay=1&mute=1&loop=1`" title="Nyan Cat [original]" frameborder="0" allowfullscreen></iframe>
+        <iframe :src="`https://youtube.com/embed/${video}?controls=0&autoplay=1&mute=1&loop=1&playlist=${video}`" title="Nyan Cat [original]" frameborder="0" allowfullscreen></iframe>
         <div class="data-container">
             <h1>{{ name }}</h1>
             <p>{{ description }}</p>
