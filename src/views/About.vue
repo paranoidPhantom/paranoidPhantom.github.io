@@ -79,7 +79,7 @@ const skills = ref([
 
 <style scoped>
     .container {
-        height: calc(65vh - 1rem);
+        height: calc(100vh - 14rem);
         font-size: 1.5rem;
     }
     .skill-container {
@@ -107,7 +107,7 @@ const skills = ref([
     }
     @media screen and (max-width: 700px) {
         .container {
-            font-size: 1.5rem;
+            font-size: 1.4rem;
         }
         li {
             margin: 1rem;
