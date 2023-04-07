@@ -25,7 +25,7 @@
         transition: all 0.3s ease-in-out;
     }
     li:hover {
-        transform: translateX(1vw);
+        transform: translateX(1rem);
     }
     @media screen and (max-width: 700px) {
         .container {
